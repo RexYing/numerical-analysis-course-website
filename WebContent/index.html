@@ -6,14 +6,31 @@
 
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
-<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />	
+<script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"></script>
+<link type="text/css" href="css/jquery-ui.css" rel="stylesheet" />
+
+<style type="text/css">
+	body{
+		font-family:"Segoe UI", Helvetica, Verdana;font-size: 13px;
+		background-color: #b0c4de;
+	}
+	#wrapper{width:700px;}
+	h1{font-weight:normal;}
+	.header { margin-top: 2em;font-weight:normal; }
+	#dialog_link {padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+	#dialog_link span.ui-icon {margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+	ul#icons {margin: 0; padding: 0;}
+	ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+	ul#icons span.ui-icon {float: left; margin: 0 4px;}
+	#verticalSliders{height:140px;padding-top:20px;}
+          #verticalSliders > div{float:left;margin:20px;}
+</style>	
 </head>
 
 <body>
 
-<img src="resources/headline-1000.png"></img>
-<div id="tabs" style="width:80%">
+<div id="tabs" style="width:80%; text-align: center; left:10%; height: 100%">
+  <img src="resources/headline-1000.png"></img>
   <ul>
     <li><a href="#tabs-1">Course Synopsis</a></li>
     <li><a href="#tabs-2">Lecture</a></li>
@@ -22,7 +39,29 @@
     <li><a href="#tabs-5">Admin</a></li>
   </ul>
   <div id="tabs-1">
-    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  
+  	<h2 style="text-align: left;"> Introduction </h2>
+  	
+  	<h2 style="text-align: left;"> Syllabus </h2>
+	<!-- Accordion -->
+	<div id="accordion">
+		<div>
+			<h3><a href="#">Part One</a></h3>
+			<div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+		</div>
+		<div>
+			<h3><a href="#">Part Two</a></h3>
+			<div>Phasellus mattis tincidunt nibh.</div>
+		</div>
+		<div>
+			<h3><a href="#">Part Three</a></h3>
+			<div>Nam dui erat, auctor a, dignissim quis.</div>
+		</div>
+	</div>
+    
+    <h2 style="text-align: left;"> Prerequisites </h2>
+    
+    <h2 style="text-align: left;"> Grading </h2>
   </div>
   <div id="tabs-2">
     <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
